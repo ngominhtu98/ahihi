@@ -1,0 +1,136 @@
+.modal {
+    /* mặc định được ẩn đi */
+    position: fixed;
+    /* vị trí cố định */
+    z-index: 1;
+    /* Ưu tiên hiển thị trên cùng */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    padding-top: 5%;
+}
+
+.modal .modal-product-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 15px;
+}
+
+.modal .modal-header {
+    height: 40px;
+}
+
+.modal .modal-header button {
+    float: right;
+    height: 40px;
+    width: 40px;
+    background: none;
+    color: black;
+    border: none;
+    font-size: 24px;
+}
+
+.modal .modal-header h2 {
+    float: left;
+    line-height: 40px;
+    color: black;
+    margin: 0;
+    font-size: 20px;
+}
+
+.modal .modal-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal .modal-container .m-c-left .m-slide-content .modal-slide-image {
+    width: 100%;
+    border: 1px solid rgba(34, 8, 8, 0.753);
+}
+
+.modal .modal-container .m-c-left .m-slide-content .modal-slide-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal .modal-container .m-c-left .m-slide-content .modal-slide-section .slide-row .slide-row-image {
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+}
+
+.modal .modal-container .c-right p {
+    margin: 0 5%;
+}
+
+.modal .modal-container .c-bottom p {
+    margin: 0;
+}
+
+.modal .modal-footer {
+    height: 40px;
+    margin-top: 10px;
+}
+
+.modal .modal-footer .modalAddToCart {
+    display: flex;
+    float: left;
+    background: white;
+    color: black;
+    padding: 10px;
+    margin: 0;
+    border-radius: 15px;
+}
+
+.modal .modal-footer .modalAddToCart p {
+    margin-left: 5px;
+}
+
+.modal .modal-footer .cancelModal {
+    float: right;
+    background: white;
+    color: black;
+    padding: 10px;
+    margin: 0;
+    border-radius: 15px;
+}
+
+.modal .modal-footer h2 {
+    float: left;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.modal .modal-header button:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.modal .modal-footer .cancelModal:hover {
+    color: red;
+    border: 1px solid red;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 5px rgba(34, 8, 8, 0.753);
+}
+
+.modal .modal-footer .modalAddToCart:hover {
+    color: chocolate;
+    border: 1px solid chocolate;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 5px rgba(34, 8, 8, 0.753);
+}
+
+@media only screen and (max-width: 479px) {
+    .modal {
+        padding: 0;
+    }
+    .modal .modal-product-content {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,233 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+
+/* Top */
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background: white;
+    top: 0;
+}
+
+.header .header-top {
+    height: 40px;
+    line-height: 40px;
+}
+
+.header .header-top .text {
+    float: right;
+}
+
+.header .header-top .text ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+/* Bot */
+
+.header .header-bot {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    padding: 0 5%;
+    box-shadow: 0 0 5px rgba(34, 8, 8, 0.753);
+}
+
+.header .image-logo {
+    float: right;
+    height: 60px;
+}
+
+.header .header-bot .logo:hover {
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+.header .header-bot .search-box {
+    padding-left: 3px;
+    background-color: #f5f5f5;
+    line-height: 40px;
+    margin: 10px auto;
+    border-radius: 5px;
+    height: 40px;
+    border: 1px solid rgba(34, 8, 8, 0.753);
+}
+
+.header .search-txt {
+    width: 90%;
+    color: rgba(34, 8, 8, 0.753);
+    font-size: 15px;
+    padding: 8px;
+    border: none;
+    background-color: #f5f5f5;
+}
+
+.header .search-btn {
+    float: right;
+    width: 10%;
+    font-size: 19px;
+    text-align: center;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #888;
+    background-color: none;
+    height: 38px;
+}
+
+.header .search-btn:hover {
+    background-color: #888;
+    color: white;
+}
+
+.header .search-box input[type=text]:focus {
+    border-color: rgba(34, 8, 8, 0.753);
+    box-shadow: 0px 0px 8px rgba(34, 8, 8, 0.753);
+}
+
+.header .search-box input[type=text]:hover {
+    border-color: rgba(34, 8, 8, 0.753);
+    box-shadow: 0px 0px 8px rgba(34, 8, 8, 0.753);
+}
+
+
+/* mainbot */
+
+.header .header-bot .main-bot {
+    margin-right: 0%;
+}
+
+.header .header-bot .main-bot .header-Card button {
+    height: 50px;
+    color: rgba(34, 8, 8, 0.753);
+    padding: 0 10px;
+    margin: 5px 0px;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header .header-bot .main-bot .cart-information {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.header .main-bot .header-Card button:hover {
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+
+/* Dropdown */
+
+.header .header-bot .dropdown .header-dropbtn {
+    height: 40px;
+    width: 60px;
+    color: rgba(34, 8, 8, 0.753);
+    background: none;
+    border: none;
+    font-size: 30px;
+    margin: 10px 0;
+    outline: none;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+.header-drop-content {
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    right: 5%;
+    width: 50%;
+    padding: 10px;
+    background: #888;
+    display: none;
+}
+
+.header .header-bot .dropdown:hover .header-drop-content {
+    display: block;
+}
+
+.header-drop-content li {
+    padding: 10px;
+}
+
+.header-drop-content a {
+    display: block;
+    color: white;
+}
+
+.header-drop-content li:hover {
+    background-color: #f5f5f5;
+}
+
+.header-drop-content li:hover a {
+    color: darkgreen;
+}
+
+.header .header-bot .dropdown .header-dropbtn:hover {
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+    .header .header-bot {
+        padding: 0 5px;
+    }
+    .header-drop-content {
+        right: 0px;
+    }
+    */
+}
+
+@media only screen and (max-width: 600px) {
+    .header .header-bot .main-bot .cart-information {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .header .header-bot {
+        height: 180px;
+    }
+    .header .header-bot .dropdown {
+        margin: 0 auto;
+    }
+    /* .header-drop-content {
+        top: 220px;
+        right: 0px;
+    } */
+    .header .header-bot .main-bot .cart-information {
+        display: inline-block;
+    }
+}
+
+
+/* button Dropdown Header */
+
+.displayBlock {
+    display: block;
+}
+
+.boxShadow {
+    box-shadow: 1px 1px 10px 1px black;
+}

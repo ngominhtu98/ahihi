@@ -1,0 +1,179 @@
+.cart {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 15px;
+    height: auto;
+}
+
+.cart .cart-text {
+    display: inline-block;
+    text-align: center;
+    font-size: 38px;
+}
+
+.cart .cancel {
+    float: right;
+    height: 40px;
+    width: 40px;
+    background: none;
+    color: black;
+    border: none;
+    font-size: 24px;
+}
+
+.cart .cancel:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.cart .cart-footer {
+    height: 40px;
+}
+
+.cart .cancelModal {
+    float: right;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cart .cancelModal:hover {
+    color: red;
+    border: 1px solid red;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 5px rgba(34, 8, 8, 0.753);
+}
+
+.cart table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+    background: white;
+    border-top: 1px solid black;
+}
+
+.cart tr {
+    height: 60px;
+    padding: 10px;
+}
+
+.cart th {
+    text-align: center;
+    color: rgba(34, 8, 8, 0.753);
+    font-size: 20px;
+}
+
+.cart td {
+    border-bottom: 1px solid rgba(34, 8, 8, 0.753);
+    text-align: center;
+    padding: 10px;
+}
+
+.cart td .cart-item {
+    text-align: left;
+}
+
+.cart tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.cart .check {
+    width: 60px;
+    height: 20px;
+}
+
+.cart .cart-item img {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 5px;
+    font-size: 30px;
+}
+
+.cart .cart-item .cart-item-title {
+    font-size: 16px;
+    line-height: 60px;
+    color: black;
+    float: left;
+}
+
+.cart .cart-item-quantity {
+    font-size: 16px;
+    width: 60px;
+    height: 20px;
+    ;
+}
+
+.cart .price {
+    font-size: 18px;
+    width: 15%;
+}
+
+.cart .btnRemove {
+    background: white !important;
+    text-align: center;
+    width: 10%;
+}
+
+.cart .btnRemoveCart {
+    color: white;
+    background-color: red;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.cart .btnRemoveCart:hover {
+    cursor: pointer;
+    border: 1px solid red;
+    background: white;
+    color: red;
+    box-shadow: 5px 5px 10px 5px rgba(34, 8, 8, 0.753);
+}
+
+.cart .total {
+    text-align: center;
+    font-size: 20px;
+    margin: 30px 0px;
+}
+
+.cart .total div {
+    display: inline;
+}
+
+.cart .total .totalText {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.cart .carts-note {
+    display: block;
+    font-size: 16px;
+    color: blue;
+    margin: 30px auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .cart .cart-item img {}
+    .cart .cart-item h5 {
+        line-height: normal;
+        margin: 0px 10px;
+    }
+    .cart .cart-text {
+        font-size: 26px;
+    }
+    .cart .cart-item th {
+        font-size: 12px;
+    }
+    .cart {
+        padding: 5px;
+    }
+    .cart .cart-item .tdCheck {
+        display: none;
+    }
+}

@@ -1,0 +1,58 @@
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(34, 8, 8, 0.753);
+    color: rgba(34, 8, 8, 0.753);
+    padding: 20px 50px 30px 50px;
+    width: 200px;
+}
+
+.login .login-logo {
+    display: block;
+    width: 70%;
+    margin: 0px auto;
+    border-radius: 50%;
+    background-color: rgba(34, 8, 8, 0.753);
+}
+
+.login .login-text {
+    text-align: center;
+    font-size: 30px;
+}
+
+.login .textbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 15px;
+    border-bottom: 1px solid rgba(34, 8, 8, 0.753);
+}
+
+.login input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.login button {
+    display: block;
+    color: rgba(34, 8, 8, 0.753);
+    margin: 20px auto;
+    font-size: 20px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(34, 8, 8, 0.753);
+    cursor: pointer;
+}
+
+.login .textbox:hover {
+    color: darkorange;
+}
+
+.login button:hover {
+    background-color: rgba(34, 8, 8, 0.753);
+    color: white;
+}

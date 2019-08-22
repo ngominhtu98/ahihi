@@ -1,0 +1,33 @@
+.container .c-bottom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .c-left {
+    height: auto;
+    border: 1px solid rgba(34, 8, 8, 0.753);
+}
+
+.container .c-left {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .c-left-main ul li {
+    margin: 20px 40px;
+    display: block;
+}
+
+.container .c-left-main ul .c-left-product {
+    margin: 20px 10px;
+}
+
+.container .c-left-main ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.container .c-left .c-left-main ul li a:hover {
+    color: blue;
+    font-size: 18px;
+}

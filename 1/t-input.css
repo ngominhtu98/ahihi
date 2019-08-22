@@ -1,0 +1,21 @@
+input[type=text] {
+    border: 2px solid #aaa;
+    margin: auto;
+    border-radius: 4px;
+    margin: 8px 0px;
+    outline: none;
+    position: absolute;
+    /**can le**/
+    left: 50%;
+    top: 10px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+
+/** kich chuot **/
+
+input[type=text]:focus {
+    border-color: dodgerblue;
+    box-shadow: 0px 0px 8px 0px dodgerblue;
+}

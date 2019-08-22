@@ -1,0 +1,109 @@
+.modal {
+    /* mặc định được ẩn đi */
+    position: fixed;
+    /* vị trí cố định */
+    z-index: 1;
+    /* Ưu tiên hiển thị trên cùng */
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.modal .modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 15px;
+}
+
+.modal .modal-header {
+    height: 40px;
+}
+
+.modal .modal-header button {
+    float: right;
+    height: 40px;
+    width: 40px;
+    background: none;
+    color: black;
+    border: none;
+    font-size: 24px;
+}
+
+.modal .modal-header h2 {
+    float: left;
+    line-height: 40px;
+    color: black;
+    margin: 0;
+}
+
+.modal .modal-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal .modal-container .c-left {
+    flex: 50%;
+}
+
+.modal .modal-container .c-left img {
+    margin: 0;
+    width: 100%;
+    border: 1px solid rgba(34, 8, 8, 0.753);
+}
+
+.modal .modal-container .c-right {
+    flex: 50%;
+}
+
+.modal .modal-container .c-right p {
+    margin: 0 5%;
+}
+
+.modal .modal-container .c-bottom {
+    flex: 100%;
+}
+
+.modal .modal-container .c-bottom p {
+    margin: 0;
+}
+
+.modal .modal-footer {
+    height: 40px;
+}
+
+.modal .modal-footer h2 {
+    margin: 0;
+}
+
+.modal .modal-footer button {
+    float: right;
+    background: white;
+    color: black;
+    padding: 10px;
+    margin: 0;
+    border-radius: 15px;
+}
+
+.modal .modal-footer h2 {
+    float: left;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.modal .modal-header button:hover {
+    color: red;
+}
+
+.modal .modal-footer button:hover {
+    color: red;
+    border: 1px solid red;
+}

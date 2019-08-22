@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <style>
+        p {
+            background-color: yellow;
+        }
+        
+        .active {
+            color: blue;
+            font-weight: bold;
+        }
+        
+        .over {
+            background-color: #ebc90c;
+        }
+    </style>
+    <script>
+        $(function() {
+            $('p').on({
+                click: function() {
+                    $(this).toggleClass("active");
+                },
+                mouseenter: function() {
+                    $(this).addClass("over");
+                },
+                mouseleave: function() {
+                    $(this).removeClass("over");
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

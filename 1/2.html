@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <style>
+        p {
+            background-color: yellow;
+        }
+        
+        .ahihi {
+            color: blue;
+        }
+        
+        body .active {
+            width: 100px;
+            height: 100px;
+            color: rgba(34, 8, 8, 0.753);
+            border-radius: 50%;
+            border: 1px solid rgba(34, 8, 8, 0.753);
+            font-size: 16px;
+            background-color: white;
+        }
+        
+        .over {
+            background-color: #ebc90c;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <p>olelelle</p>
+    <button type="button" class="ahihi" id="ahihi">ahihi</button>
+    <?php 
+        echo("hello");
+    ?>
+
+</body>
+<script>
+    $(function() {
+        $('p').on({
+            click: function() {
+                $(this).toggleClass("active");
+            },
+            mouseenter: function() {
+                $(this).addClass("over");
+            },
+            mouseleave: function() {
+                $(this).removeClass("over");
+            }
+        });
+    });
+    document.getElementsByClassName("ahihi")[0].addEventListener("click", displayDate);
+
+    function displayDate() {
+        var x = document.getElementsByClassName("ahihi")[0];
+        x.classList.toggle("active");
+
+    }
+</script>
+
+</html>

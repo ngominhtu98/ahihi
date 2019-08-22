@@ -1,0 +1,96 @@
+.container .c-main {
+    /* float: right6
+    width: 70%; */
+    flex: 70%;
+    margin: 0 5%;
+    height: auto;
+}
+
+.container .c-main .show-Product .row {
+    height: auto;
+    width: 22%;
+    border: 1px solid rgba(34, 8, 8, 0.753);
+    display: inline-block;
+    margin: 0px 10px 20px 0px;
+}
+
+.container .c-main .show-Product .product-top {
+    text-align: center;
+}
+
+.container .c-main .show-Product .row img {
+    height: 200px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container .c-main .show-Product .product-top .btn-product-show {
+    width: 30px;
+    height: 30px;
+    color: rgba(34, 8, 8, 0.753);
+    border-radius: 50%;
+    border: 1px solid rgba(34, 8, 8, 0.753);
+    font-size: 16px;
+    background-color: white;
+}
+
+.container .c-main .show-Product .product-bot {
+    text-align: center;
+}
+
+.container .c-main .show-Product .product-bot #star {
+    color: yellow;
+    font-size: 10px;
+}
+
+.container .c-main .show-Product .product-top .btn-product {
+    display: inline-block;
+}
+
+.container .c-main .show-Product .product-top:hover .btn-product {
+    display: inline-block;
+    margin-left: 5%;
+    transition: 0.4s;
+}
+
+.container .c-main .show-Product .product-top:hover {
+    cursor: pointer;
+}
+
+.container .c-main .show-Product .product-top .btn-product-show:hover {
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    background: rgba(34, 8, 8, 0.753);
+    ;
+}
+
+.container .c-main .show-Product .product-bot h3 {
+    font-size: 16px;
+}
+
+.container .c-main .show-Product .product-bot h5 {
+    font-size: 12px;
+}
+
+.container .c-main .show-Product .product-bot h3:hover {
+    font-size: 20px;
+}
+
+.container .c-main .show-Product .product-bot h5:hover {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 970px) {}
+
+@media only screen and (max-width: 730px) {
+    .container .c-main .show-Product .row {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .container .c-main .show-Product .row {
+        width: 45%;
+    }
+}

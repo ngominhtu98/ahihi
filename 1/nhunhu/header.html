@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Header</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="container-left.css">
+    <link rel="stylesheet" href="container-main.css">
+    <link rel="stylesheet" href="container-top.css">
+    <link rel="stylesheet" href="slides.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="modal.css">
+
+    <script src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="header-top">
+            <div class="main-top">
+                <ul>
+                    <li>text1</li>
+                    <li>text2</li>
+                    <li>text3</li>
+                    <li>text3</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="header-bot">
+            <div class="logo">
+                <a href="#"><img class="image-logo" src="logotusu.png" alt=""></a>
+            </div>
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" id="" placeholder="Search...">
+                <a href="#" class="search-btn">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+
+            <div class="main-bot">
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i>Cart</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i>Login Accout</a></li>
+                    <li><a href="#"><i class="fas fa-user-plus"></i>Regittration</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="header-virtaul">
+        <!-- Phần header ảo-->
+    </div>
+
+
+
+    <!-- Container -->
+    <div class="container">
+        <div class="c-top">
+            <div class="c-top-main">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product1</a></li>
+                    <li><a href="#">Product2</a></li>
+                    <li><a href="#">Product3</a></li>
+                    <li><a href="#">Product4</a></li>
+                    <li><a href="#">Phone</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slides -->
+
+        <div class="slides">
+
+            <a class="mySlides" href="#"><img src="a.jpg" alt="ahihihi"></a>
+            <a class="mySlides" href="#"><img src="b.jpg" alt=""></a>
+            <a class="mySlides" href="#"><img src="c.jpg" alt=""></a>
+        </div>
+
+
+        <div class="c-bottom">
+            <div class="c-left">
+                <div class="c-left-main">
+                    <ul>
+                        <li class="c-left-product"><a href="#">name Product 1</a></li>
+                        <li><a href="#">Product 1</a></li>
+                        <li><a href="#">Product 2</a></li>
+                        <li><a href="#">Product 3</a></li>
+                        <li><a href="#">Product 4</a></li>
+                    </ul>
+                </div>
+                <div class="c-left-main">
+                    <ul>
+                        <li class="c-left-product"><a href="#">name Product 2</a></li>
+                        <li><a href="#">Product 1</a></li>
+                        <li><a href="#">Product 2</a></li>
+                        <li><a href="#">Product 3</a></li>
+                        <li><a href="#">Product 4</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="c-main">
+                <div class="show-Product">
+
+                    <div class="row">
+                        <div class="product-top">
+                            <img id="1" src="faker.png" alt="Product-image">
+                            <div class="btn-product">
+                                <button type="button" id="btn-product-show1" class="btn-product-show" title="Quick Shop" onclick="onClick(this)"><i class="fas fa-eye"></i></button>
+                                <button type="button" id="btn-product-show2" class="btn-product-show" title="Add To WishList"><i class="far fa-heart"></i></button>
+                                <button type="button" id="btn-product-show3" class="btn-product-show" title="Add To Cart"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+
+                        </div>
+                        <div class="product-bot">
+                            <i id="star" class="fas fa-star"></i>
+                            <i id="star" class="fas fa-star"></i>
+                            <i id="star" class="fas fa-star"></i>
+                            <i id="star" class="fas fa-star-half-alt"></i>
+                            <i id="star" class="far fa-star"></i>
+                            <h3>Name Product</h3>
+                            <h5>Price</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="product-top">
+                            <img src="a.jpg" alt="Product-image">
+                            <div class="btn-product">
+                                <button type="button" class="btn-product-show" title="Quick Shop"><i class="fas fa-eye"></i></button>
+                                <button type="button" class="btn-product-show" title="Add To WishList"><i class="far fa-heart"></i></button>
+                                <button type="button" class="btn-product-show" title="Add To Cart"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-bot">
+                            <i id="star" class="fas fa-star"></i>
+                            <i id="star" class="fas fa-star"></i>
+                            <i id="star" class="fas fa-star"></i>
+                            <i id="star" class="fas fa-star-half-alt"></i>
+                            <i id="star" class="far fa-star"></i>
+                            <h3>Name Product</h3>
+                            <h5>Price</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="product-top">
+                            <img src="b.jpg" alt="Product-image">
+                            <div class="btn-product">
+                                <button type="button" class="btn-product-show" title="Quick Shop"><i class="fas fa-eye"></i></button>
+                                <button type="button" class="btn-product-show" title="Add To WishList"><i class="far fa-heart"></i></button>
+                                <button type="button" class="btn-product-show" title="Add To Cart"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-bot">
+                            <i id="star" class="fas fa-star"></i>
+                            <i id="star" class="fas fa-star"></i>
+                            <i id="star" class="fas fa-star"></i>
+                            <i id="star" class="fas fa-star-half-alt"></i>
+                            <i id="star" class="far fa-star"></i>
+                            <h3>Name Product</h3>
+                            <h5>Price</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="product-top">
+                            <img src="c.jpg" alt="Product-image">
+                            <div class="btn-product">
+                                <button type="button" class="btn-product-show" title="Quick Shop"><i class="fas fa-eye"></i></button>
+                                <button type="button" class="btn-product-show" title="Add To WishList"><i class="far fa-heart"></i></button>
+                                <button type="button" class="btn-product-show" title="Add To Cart"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-bot">
+                            <i id="star" class="fas fa-star"></i>
+                            <i id="star" class="fas fa-star"></i>
+                            <i id="star" class="fas fa-star"></i>
+                            <i id="star" class="fas fa-star-half-alt"></i>
+                            <i id="star" class="far fa-star"></i>
+                            <h3>Name Product</h3>
+                            <h5>Price</h5>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal01">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-header-text">Header</h2>
+                <button class="cancel" title="Cancel" onclick="cancleModal()">X</button>
+            </div>
+            <div class="modal-container">
+                <div class="c-left">
+                    <img id="modal-image01" src="b.jpg" alt="">
+                </div>
+                <div class="c-right">
+                    <p class="c-right-text">ahihi</p>
+                </div>
+                <div class="c-bottom">
+                    <p>ahihi bottom</p>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <h2 class="modal-footer-text">ahhi footer</h2>
+                <button class="cancel" title="Close" onclick="cancleModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <h1>
+            Basic information
+        </h1>
+
+    </div>
+
+
+</body>
+<script src="slides.js"></script>
+<script src="modal.js"></script>
+
+</html>
